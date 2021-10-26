@@ -1,12 +1,21 @@
 {
-  "name": "WeatherApi",
+  "name": "weatherapi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"tsc",
+    "start": "npm run build && node dist/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@types/node": "^16.11.6"
+  }
 }
