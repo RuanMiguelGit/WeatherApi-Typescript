@@ -1,11 +1,11 @@
 {
-  "name": "typescript-api",
+  "name": "weatherapi",
   "version": "1.0.0",
   "description": "Complete API built with Node.js and Typescript",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node dist/src/index.js",
+    "start": "npm run build && node dist/src/index.js",
     "start:local": "ts-node-dev 'src/index.ts'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src ./test --ext .ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waldemarnt/node-typescript-api.git"
+    "url": "git+https://github.com/RuanMiguelGit/WeatherApi-Typescript"
   },
   "keywords": [
     "node",
@@ -28,9 +28,9 @@
   "author": "Waldemar Neto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waldemarnt/node-typescript-api/issues"
+    "url": "https://github.com/RuanMiguelGit/WeatherApi-Typescriptissues"
   },
-  "homepage": "https://github.com/waldemarnt/node-typescript-api#readme",
+  "homepage": "https://github.com/RuanMiguelGit/WeatherApi-Typescript#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "@overnightjs/core": "^1.7.4",
