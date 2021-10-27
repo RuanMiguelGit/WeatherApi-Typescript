@@ -20,6 +20,17 @@ export interface StormGlassForescastResponse {
     hours:StormGlassPoint[]
 }
 
+export interface ForecastPoint {
+    time: string;
+    waveHeight: number;
+    waveDirection: number;
+    swellDirection: number;
+    swellHeight: number;
+    swellPeriod: number;
+    windDirection: number;
+    windSpeed: number;
+  }
+
 
 export class stormGlass {
     readonly stormGlassAPIParams =
@@ -31,5 +42,12 @@ export class stormGlass {
     return this.request.get<StormGlassForescastResponse>(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lat}&params=${this.stormGlassAPIParams}&source=${this.stormGlassAPISource}`,
     )
    }
+
+
+   private normalizeResponse(
+       points:StormGlassForescastResponse
+   ):ForecastPoint[] {
+    return 
+   } 
 
 }
