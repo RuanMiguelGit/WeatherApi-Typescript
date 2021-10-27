@@ -1,6 +1,11 @@
 import { AxiosStatic } from "axios";
 
 
+export interface StormGlassForescastResponse {
+    hours:
+}
+
+
 export class stormGlass {
     readonly stormGlassAPIParams =
     'swellDirection,swellHeight,swellPeriod,waveDirection,waveHeight,windDirection,windSpeed';
