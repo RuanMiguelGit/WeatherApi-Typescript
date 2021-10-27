@@ -1,6 +1,16 @@
 import { AxiosStatic } from "axios";
 
 
+export interface StormGlassSource {
+    [key:string]: number
+}
+
+export interface StormGlassPoint { 
+    readonly time: string
+    readonly waveHeight: StormGlassSource
+
+}
+
 export interface StormGlassForescastResponse {
     hours:
 }
